@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My List | Grocery List</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Grocery list -->
+  <main class="card card-wide" id="grocerySection">
+    <header class="list-header">
+      <div>
+        <p class="brand">Grocery List</p>
+        <h1>My list</h1>
+      </div>
+      <button type="button" class="btn btn-ghost" id="logoutBtn">Log out</button>
+    </header>
+
+    <!-- Add item -->
+    <form id="itemForm" class="item-form" novalidate>
+      <div class="field grow">
+        <label for="item_name">Item name</label>
+        <input type="text" id="item_name">
+      </div>
+      <div class="field qty-field">
+        <label for="item_qty">Quantity</label>
+        <input type="number" id="item_qty" min="1">
+      </div>
+      <button type="submit" class="btn btn-primary">Add item</button>
+    </form>
+    <p id="listMessage" class="message" role="alert"></p>
+
+    <!-- List -->
+    <div class="list-bar">
+      <h2 class="section-title">The list</h2>
+      <span class="summary" id="summary"></span>
+    </div>
+
+    <ul id="groceryList" class="grocery-list"></ul>
+    <p id="emptyMessage" class="empty">Nothing here yet. Add your first item above.</p>
+
+    <div class="list-actions">
+      <button type="button" class="btn btn-danger" id="clearBtn">Clear list</button>
+    </div>
+  </main>
+
+  <!-- External JS -->
+  <script src="js/helpers.js"></script>
+  <script src="js/list.js"></script>
+</body>
+</html>

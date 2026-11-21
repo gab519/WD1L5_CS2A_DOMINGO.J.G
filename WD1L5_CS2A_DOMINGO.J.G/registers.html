@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Grocery List</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Registration -->
+  <main class="card" id="registration">
+    <header class="card-header">
+      <p class="brand">Grocery List</p>
+      <h1>Create your account</h1>
+      <p class="lead">Register once, then log in to build your list.</p>
+    </header>
+
+    <form id="registerForm" novalidate>
+      <div class="field-row">
+        <div class="field">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" autocomplete="family-name">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="address">Address</label>
+        <input type="text" id="address" autocomplete="street-address">
+      </div>
+
+      <div class="field">
+        <label for="uname">Username</label>
+        <input type="text" id="uname" autocomplete="username">
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" autocomplete="email">
+      </div>
+
+      <div class="field">
+        <label for="pword">Password</label>
+        <input type="password" id="pword" autocomplete="new-password">
+        <span class="hint">Saved in this browser only.</span>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Register</button>
+      <p id="regMessage" class="message" role="alert"></p>
+    </form>
+
+    <p class="switch">Already registered? <a href="login.html">Log in</a></p>
+  </main>
+
+  <!-- External JS -->
+  <script src="js/helpers.js"></script>
+  <script src="js/reg.js"></script>
+</body>
+</html>

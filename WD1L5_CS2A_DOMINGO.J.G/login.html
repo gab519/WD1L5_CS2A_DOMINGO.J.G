@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in | Grocery List</title>
+
+  <!-- ExternalCSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Login -->
+  <main class="card" id="loginSection">
+    <header class="card-header">
+      <p class="brand">Grocery List</p>
+      <h1>Welcome back</h1>
+      <p class="lead">Log in to see your list.</p>
+    </header>
+
+    <form id="loginForm">
+      <div class="field">
+        <label for="login_uname">Username</label>
+        <input type="text" id="login_uname" autocomplete="username" required>
+      </div>
+
+      <div class="field">
+        <label for="login_pword">Password</label>
+        <input type="password" id="login_pword" autocomplete="current-password" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      <p id="loginMessage" class="message" role="alert"></p>
+    </form>
+
+    <p class="switch">No account yet? <a href="registers.html">Register</a></p>
+  </main>
+
+  <!-- External JS -->
+  <script src="js/helpers.js"></script>
+  <script src="js/log.js"></script>
+</body>
+</html>
